@@ -43,19 +43,19 @@
 
 # Developer
 
-** 😋윤다혜 **
+**😋윤다혜**
 
 Position : 팀장 | Back | Deploy
 
 Git : [https://github.com/Rahdduru](https://github.com/Rahdduru)
 
-** 😆최윤정 **
+**😆최윤정**
 
 Position :  윤다혜 괴롭히기 | UI Design | Front
 
 Git : [https://github.com/cbj0010](https://github.com/cbj0010)
 
-** 😉강규빈 **
+**😉강규빈**
 
 Position : Back | Front
 
