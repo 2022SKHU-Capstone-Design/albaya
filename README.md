@@ -42,10 +42,8 @@
 <br>
 
 **✏️(비기능적 요구사항)추가 제공 서비스**
-- 사용자의 개인 정보의 보안을 유지한다.
-- 사용자가 스케줄을 공유할때 보이는 보안의 단계를 조절한다.
-- 지점 내 스케줄 공유 시의 보안의 단계를 조절한다.
-- 사용자 개인의 공유에서도 보안의 단계를 조절하고 사용자 개인과 사업장의 보안을 유지한다.
+- 사용자 개인과 사업장의 보안을 유지한다.
+- 사용자와 지점장이 스케줄을 공유할때 보이는 보안의 단계를 조절한다.
 - 사용자가 여러 커뮤니티에 접속해도 모두 접속이 가능하게 한다.
 - 월급 계산의 인터페이스를 간결화하여 사용자가 이해하기 쉽도록한다.
 - 가입 시 가이드라인을 제공해 사용자가 이용함에 있어 편리함을 제공하도록 한다.
@@ -82,14 +80,20 @@ Position : 팀장 | Back | Deploy
 
 Git : [https://github.com/Rahdduru](https://github.com/Rahdduru)
 
+Branch : ydh
+
 **😆최윤정**
 
 Position :  윤다혜 괴롭히기 | UI Design | Front
 
 Git : [https://github.com/cbj0010](https://github.com/cbj0010)
 
+Branch : cyj
+
 **😉강규빈**
 
 Position : Back | Front
 
 Git : [https://github.com/qqqbin](https://github.com/qqqbin)
+
+Branch : kqb
