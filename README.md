@@ -41,9 +41,9 @@
 - #21209C rgb(33, 32, 156)
 - #23120B rgb(35, 18, 11)
 
-<img alt="colorChart" src="https://user-images.githubusercontent.com/49307827/160310136-b2dc5ca7-a997-44a1-8de9-bfc30031a8e8.png" width="450">
+<img alt="colorChart" src="https://user-images.githubusercontent.com/49307827/160310136-b2dc5ca7-a997-44a1-8de9-bfc30031a8e8.png" width="600">
 
-<img alt="logo" src="https://user-images.githubusercontent.com/49307827/160309709-efe1e1e0-79d7-455c-aaec-f5bd0148dfb2.png" width = "450">
+<img alt="logo" src="https://user-images.githubusercontent.com/49307827/160309709-efe1e1e0-79d7-455c-aaec-f5bd0148dfb2.png" width = "600">
 
 # Develop
 
