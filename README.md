@@ -42,7 +42,7 @@
 - #23120B rgb(35, 18, 11)
 
 **✏️ 로고**
-<img src="https://user-images.githubusercontent.com/49307827/160309709-efe1e1e0-79d7-455c-aaec-f5bd0148dfb2.png" width = "1000">
+<img src="https://user-images.githubusercontent.com/49307827/160309709-efe1e1e0-79d7-455c-aaec-f5bd0148dfb2.png" width = "500">
 
 # Develop
 
