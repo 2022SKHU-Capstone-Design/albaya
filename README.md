@@ -41,6 +41,13 @@
 - #21209C rgb(33, 32, 156)
 - #23120B rgb(35, 18, 11)
 
+# Develop
+
+**FlowChart**
+![FlowChart](./캡스톤디자인/2_FlowChart.png)
+
+출처: https://zeddios.tistory.com/34 [ZeddiOS]
+
 # Developer
 
 **😋윤다혜**
