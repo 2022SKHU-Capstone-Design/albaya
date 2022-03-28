@@ -41,14 +41,14 @@
 - #21209C rgb(33, 32, 156)
 - #23120B rgb(35, 18, 11)
 
-<img width="500" src="https://user-images.githubusercontent.com/49307827/160310136-b2dc5ca7-a997-44a1-8de9-bfc30031a8e8.png">
+<img alt="colorChart" src="https://user-images.githubusercontent.com/49307827/160310136-b2dc5ca7-a997-44a1-8de9-bfc30031a8e8.png" width="450">
 
-<img src="https://user-images.githubusercontent.com/49307827/160309709-efe1e1e0-79d7-455c-aaec-f5bd0148dfb2.png" width = "500">
+<img alt="logo" src="https://user-images.githubusercontent.com/49307827/160309709-efe1e1e0-79d7-455c-aaec-f5bd0148dfb2.png" width = "450">
 
 # Develop
 
 **FlowChart**
-<img src="https://user-images.githubusercontent.com/49307827/160309286-60e476fa-f4a9-41ba-a344-851afa16963d.png" width = "1000">
+<img alt="FlowChart" src="https://user-images.githubusercontent.com/49307827/160309286-60e476fa-f4a9-41ba-a344-851afa16963d.png" width = "1000">
 
 # Developer
 
