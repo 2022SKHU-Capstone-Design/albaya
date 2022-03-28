@@ -44,7 +44,7 @@
 # Develop
 
 **FlowChart**
-![FlowChart](./데스크탑/SKHU/캡스톤디자인/2_FlowChart.png)
+![FlowChart](https://user-images.githubusercontent.com/49307827/160309286-60e476fa-f4a9-41ba-a344-851afa16963d.png)
 
 출처: https://zeddios.tistory.com/34 [ZeddiOS]
 
