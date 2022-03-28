@@ -3,7 +3,7 @@
 ## 알 바야? 챙길건 챙겨야지!
 
 ### 팀 이름
-**LMTI(릳미투잇)**
+**✏️LMTI(릳미투잇)**
 - lead me to it!
 - 좋다! 문제없다!
 - 문제없이 팀을 잘 이끌어 가겠다.
@@ -56,7 +56,7 @@
 - 가입 시 가이드라인을 제공해 사용자가 이용함에 있어 편리함을 제공하도록 한다.
 <br>
 
-**✏️ 대표 컬러**
+**✏️대표 컬러**
 참고 사이트 : [https://colorhunt.co/](https://colorhunt.co/)
 
 - #F1F1F1 rgb(241, 241, 241)
@@ -68,7 +68,7 @@
 
 <br>
 
-**✏️ 로고**
+**✏️로고**
 
 <img alt="logo" src="https://user-images.githubusercontent.com/49307827/160309709-efe1e1e0-79d7-455c-aaec-f5bd0148dfb2.png" width = "600">
 
