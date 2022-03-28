@@ -46,8 +46,6 @@
 **FlowChart**
 ![FlowChart](https://user-images.githubusercontent.com/49307827/160309286-60e476fa-f4a9-41ba-a344-851afa16963d.png)
 
-출처: https://zeddios.tistory.com/34 [ZeddiOS]
-
 # Developer
 
 **😋윤다혜**
