@@ -42,8 +42,7 @@ INSTALLED_APPS = [
     'category',
     'join',
     'myCalendar',
-    'storeBoard',
-    'storeCalendar',
+    'store',
 ]
 
 MIDDLEWARE = [
@@ -129,8 +128,8 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'category', 'static'),
     os.path.join(BASE_DIR, 'join', 'static'),
     os.path.join(BASE_DIR, 'myCalendar', 'static'),
-    os.path.join(BASE_DIR, 'storeBoard', 'static'),
-    os.path.join(BASE_DIR, 'storeCalendar', 'static'),]
+    os.path.join(BASE_DIR, 'store', 'static'),
+]
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
