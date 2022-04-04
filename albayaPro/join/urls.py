@@ -1,8 +1,14 @@
+from unicodedata import name
+from django.conf import settings
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include
 
 from . import views
 
 urlpatterns = [
-    path('', views.join, name="join"),
+    path('', views.index, name="index"),
+
+    #signin
+    path('signin', views.signin, name="signin"),
+    path('', include('django.contrib.auth.urls')),
 ]
