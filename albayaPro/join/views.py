@@ -2,7 +2,7 @@ import email
 from django.shortcuts import redirect, render
 from .forms import *
 
-from django.contrib.auth.models import User
+# from django.contrib.auth.models import User
 from django.contrib.auth import login, authenticate
 from django.http import HttpResponse
 # Create your views here.
@@ -26,9 +26,10 @@ def signup(request) :
     if request.method == "POST" :
         form = UserForm(request.POST)
         if form.is_valid() :
-            new_user = User.objects.create_user(username = form.claened_data['username'],
+            new_user = CustomUser.objects.create_user(username = form.claened_data['username'],
             email = form.cleaned_data['email'],
-            password = form.cleaned_data['password'])
+            password = form.cleaned_data['password'],
+            phone_number = form.cleaned_data['phone_number'])
             login(request, new_user)
             return redirect('index')
     else :
