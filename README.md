@@ -69,23 +69,23 @@
 **😋윤다혜**
 
 > Position : 팀장 | Back | Deploy
-
+> 
 > Git : [https://github.com/Rahdduru](https://github.com/Rahdduru)
-
+> 
 > Branch : ydh
 
 **😆최윤정**
 
-Position :  윤다혜 괴롭히기 | UI Design | Front
-
-Git : [https://github.com/cbj0010](https://github.com/cbj0010)
-
-Branch : cyj
+> Position :  윤다혜 괴롭히기 | UI Design | Front
+> 
+> Git : [https://github.com/cbj0010](https://github.com/cbj0010)
+> 
+> Branch : cyj
 
 **😉강규빈**
 
-Position : Back | Front
-
-Git : [https://github.com/qqqbin](https://github.com/qqqbin)
-
-Branch : kqb
+> Position : Back | Front
+> 
+> Git : [https://github.com/qqqbin](https://github.com/qqqbin)
+> 
+> Branch : kqb
