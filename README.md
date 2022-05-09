@@ -23,6 +23,11 @@
 - 평소 아르바이트생 - 점주 간 근무 보고, 근무 지시 등의 사유로 진행하던 연락이 불편하다고 느꼈던 점주와 아르바이트생
 <br>
 
+
+**✏️Business Canvas Model**
+<img alt="FlowChart" src="https://user-images.githubusercontent.com/49307827/167326993-5ecf3a30-f73c-4a89-8ae0-bf8f8e4a170a.png">
+<br>
+
 **✏️개발 분야**
 - Web
 <br>
@@ -53,6 +58,11 @@
 
 **FlowChart**
 <img alt="FlowChart" src="https://user-images.githubusercontent.com/49307827/167326877-c954b1d5-eceb-4d98-9298-2cf4ebc37f4f.png">
+<br>
+
+**DATABASE**
+- 논의 중
+<br>
 
 # Developer
 
