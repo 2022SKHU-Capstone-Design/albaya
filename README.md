@@ -68,11 +68,11 @@
 
 **😋윤다혜**
 
-Position : 팀장 | Back | Deploy
+> Position : 팀장 | Back | Deploy
 
-Git : [https://github.com/Rahdduru](https://github.com/Rahdduru)
+> Git : [https://github.com/Rahdduru](https://github.com/Rahdduru)
 
-Branch : ydh
+> Branch : ydh
 
 **😆최윤정**
 
