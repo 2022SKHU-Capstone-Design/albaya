@@ -7,7 +7,7 @@ from .models import *
 class SigninForm(forms.ModelForm):
     class Meta:
         model = CustomUser
-        field = [ 'username', 'password']
+        fields = [ 'username', 'password']
 
 class UserForm(forms.ModelForm):
     class Meta:
