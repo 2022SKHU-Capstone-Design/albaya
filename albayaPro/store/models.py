@@ -27,3 +27,10 @@ class SuggestionBox(models.Model) :
 
     def __str__(self):
         return self.title
+
+class SuggestionCommnet(models.Model):
+    notice_id = models.ForeignKey(SuggestionBox, on_delete=models.CASCADE, related_name='comments')
+    comment = models.CharField(max_length=500)
+
+    def __str__(self):
+        return self.comment
