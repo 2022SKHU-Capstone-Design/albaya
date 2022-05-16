@@ -76,7 +76,7 @@
 
 **😆최윤정**
 
-> Position :  윤다혜 괴롭히기 | UI Design | Front
+> Position : UI Design | Front
 > 
 > Git : [https://github.com/cbj0010](https://github.com/cbj0010)
 > 
