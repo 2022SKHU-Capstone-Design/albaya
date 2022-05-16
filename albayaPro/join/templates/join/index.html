@@ -1,3 +1,5 @@
+{% extends 'join/layout.html' %}
+{% block join %}
 <form method="POST" action="/signin">
     {% csrf_token %}
     {{ signin_form.as_p}}
@@ -5,3 +7,4 @@
 </form>
 
 <a href="{% url 'signup' %}">회원가입</a>
+{% endblock %}
