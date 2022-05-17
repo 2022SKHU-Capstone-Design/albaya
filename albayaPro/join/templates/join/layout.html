@@ -1,26 +1,47 @@
-{% load staticfiles %}  
+{% load static %}
 <!-- nav, footer-->
 <html>
 
 <head>
-<link rel="stylesheet" href="{% static 'join/signup.css' %}">
+    <link rel="stylesheet" href="{% static 'join/signup.css' %}">
 </head>
 
 <body>
+
+    <nav class="navbar">
+        <div class="navbar_logo">ㅔ
+            <a href="">알바야</a>
+        </div>
+        <br>
+        <div>윤다혜 원격조종 실패</div>
+        <ul class="navbar_menu">
+            <li><a href="#">SCHEDULE</a></li>
+            <li><a href="#">COMMUNITY</a></li>
+            <li><a href="#">MATE</a></li>
+        </ul>
+
+        <ul class="navbar_icons">
+            <img src="{% static 'join/img/ic_instagram.png' %}" alt="">
+            <img src="{% static 'join/img/ic_twitter.png' %}" alt="">
+            <img src="{% static 'join/img/ic_facebook.png' %}" alt="">
+        </ul>
+
+
+
+    </nav>
+
+
     {% block join %}
     {% endblock %}
+
+    <footer>
+        <p>
+            <span>저자 : leadme</span><br />
+            <span>이메일 : albaya@gmail.com</span><br />
+            <span>&copy;Copyright 2020. cocoder. All Rights Reserved.</span>
+        </p>
+    </footer>
+
 </body>
-
-
-<footer>
-   
-    <p>
-        <span>저자 : cocoder</span><br/>
-        <span>이메일 : cocoder16@gmail.com</span><br/>
-        <span>Copyright 2020. cocoder. All Rights Reserved.</span>
-    </p>
-</footer>
-
-
 
 </html>
