@@ -44,6 +44,8 @@ INSTALLED_APPS = [
     'join',
     'myCalendar',
     'store',
+    'schedule',
+    'djangobower',
 ]
 
 MIDDLEWARE = [
@@ -132,6 +134,12 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'store', 'static'),
 ]
 
+#필요따라 각각의 장고앱마다 앱별 정적 파일을 담는 별도의 static폴더
+STATICFILES_FINDERS = (
+    'djangobower.finders.BowerFinder',
+)
+
+
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
@@ -146,3 +154,12 @@ LOGOUT_REDIRECT_URL = 'index'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 AUTH_USER_MODEL = 'join.Customuser'
+
+#django-schedule package 사용을 위한 bower 설정
+BOWER_COMPONENTS_ROOT = '/albayaPro/components/'
+
+BOWER_INSTALLED_APPS = (
+    'jquery',
+    'jquery-ui',
+    'bootstrap'
+)

@@ -8,5 +8,5 @@ from django.conf.urls.static import static
 from . import views
 
 urlpatterns = [
-    path('', views.store, name="myCalendar"),
+    path('', views.store, name="store"),
 ]+ static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)
