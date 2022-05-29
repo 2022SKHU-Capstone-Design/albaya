@@ -1,0 +1,108 @@
+@font-face {
+    font-family: 'GimpoGothicBold00';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2202-2@1.0/GimpoGothicBold00.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'GimpoGothicBold00';
+}
+
+/* 전체영역에서 여백을 없애줌 */
+
+* {
+
+    margin: 0;
+
+    padding: 0;
+
+}
+
+/* ul li태그에 리스트 스타일을 없앰 */
+
+ul li {
+    list-style: none;
+}
+
+/* a태그에 텍스트 밑줄을 없애고 색상을 #333 */
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+.menu {
+    width: 300px;
+    overflow: hidden;
+    margin: 0;
+    position: fixed;
+}
+
+.menu>li {
+    width: 100%;
+    text-align: center;
+    line-height: 40px;
+    background-color: #F1F1F1;
+}
+
+.menu a {
+    color: rgb(0, 0, 0);
+}
+
+.submenu>li {
+    line-height: 50px;
+    background-color: #94a9ff;
+}
+
+.submenu {
+    height: 0;
+    /*ul의 높이를 안보이게 처리*/
+    overflow: hidden;
+}
+
+.subsubmenu {
+    height: 0;
+    /*ul의 높이를 안보이게 처리*/
+    overflow: hidden;
+}
+
+.menu>li:hover .submenu .subsubmenu {
+    height: 300px;
+    /*서브메뉴 li한개의 높이 50*5*/
+    transition-duration: 1s;
+}
+
+.menu>li:hover {
+    background-color: #94a9ff;
+    transition-duration: 0.5s;
+}
+
+.menu>li:hover .submenu {
+    height: 300px;
+    /*서브메뉴 li한개의 높이 50*5*/
+    transition-duration: 1s;
+}
+
+.menu>li:hover .matesubmenu {
+    height: 120px;
+    /*서브메뉴 li한개의 높이 50*3*/
+    transition-duration: 1s;
+}
+
+.matesubmenu {
+    height: 0;
+    /*ul의 높이를 안보이게 처리*/
+    overflow: hidden;
+}
+
+.submenu .matesubsubmenu {
+    height: 0;
+    /*ul의 높이를 안보이게 처리*/
+    overflow: hidden;
+}
+
+.navbar_icons {
+    margin-bottom: 25%;
+    padding: 1px 16px;
+    height: 100px;
+}

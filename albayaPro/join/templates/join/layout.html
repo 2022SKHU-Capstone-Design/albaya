@@ -4,37 +4,52 @@
 
 <head>
     <link rel="stylesheet" href="{% static 'join/signup.css' %}">
+    <link rel="stylesheet" href="{% static 'join/layout.css' %}">
 </head>
 
 <body>
+    <div class="navbar_logo">
+        <a href="">알바야</a>
+    </div>
+    <br>
+    <ul class="menu">
+        <li>
+            <a href="#">SCHEDULE</a>
 
-    <nav class="navbar">
-        <div class="navbar_logo">ㅔ
-            <a href="">알바야</a>
-        </div>
-        <br>
-        <div></div>
-        <ul class="navbar_menu">
-            <li><a href="#">SCHEDULE</a></li>
-            <li><a href="#">COMMUNITY</a></li>
-            <li><a href="#">MATE</a></li>
-        </ul>
-
-        <ul class="navbar_icons">
-            <img src="{% static 'join/img/ic_instagram.png' %}" alt="">
-            <img src="{% static 'join/img/ic_twitter.png' %}" alt="">
-            <img src="{% static 'join/img/ic_facebook.png' %}" alt="">
-        </ul>
-
-
-
-    </nav>
-
-
+        </li>
+        <li>
+            <a href="#">COMMUNITY</a>
+            <ul class="submenu">
+                <li><a href="#">근무지 1</a></li>
+                <li><a href="#">근무지 2</a></li>
+                <li><a href="#">근무지 3</a></li>
+                <ul class="subsubmenu">
+                    <li><a href="#">Main</a></li>
+                    <li><a href="#">Schedule</a></li>
+                    <li><a href="#">건의 사항</a></li>
+                    <li><a href="#">문의 사항</a></li>
+                </ul>
+            </ul>
+        </li>
+        <li>
+            <a href="#">MATE</a>
+            <ul class="matesubmenu">
+                <li><a href="#">강규빈</a></li>
+                <li><a href="#">윤다혜</a></li>
+                <li><a href="#">최윤정</a></li>
+            </ul>
+        </li>
+    </ul>
+    <ul class="navbar_icons">
+        <img src="{% static 'join/img/ic_instagram.png' %}" alt="">
+        <img src="{% static 'join/img/ic_twitter.png' %}" alt="">
+        <img src="{% static 'join/img/ic_facebook.png' %}" alt="">
+    </ul>
+<br>
     {% block join %}
     {% endblock %}
 
-    <footer>
+    <footer style="margin-left:25%;padding:1px 16px;height: 100px;">
         <p>
             <span>저자 : leadme</span><br />
             <span>이메일 : albaya@gmail.com</span><br />
