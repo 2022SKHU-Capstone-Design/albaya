@@ -8,43 +8,53 @@
 </head>
 
 <body>
-    <div class="navbar_logo">
-        <a href="">알바야</a>
-    </div>
-    <br>
-    <ul class="menu">
-        <li>
-            <a href="#">SCHEDULE</a>
-        </li>
-        <li>
-            <a href="#">COMMUNITY</a>
-            <ul class="submenu">
-                <li><a href="#">근무지 1</a></li>
-                <li><a href="#">근무지 2</a></li>
-                <li><a href="#">근무지 3</a></li>
-                <ul class="subsubmenu">
-                    <li><a href="#">Main</a></li>
-                    <li><a href="#">Schedule</a></li>
-                    <li><a href="#">건의 사항</a></li>
-                    <li><a href="#">문의 사항</a></li>
+    
+    <input type="checkbox" id="menuicon">
+    <label for="menuicon">
+        <span></span>
+        <span></span>
+        <span></span>
+    </label>
+    <div id = "layout-sidebar" class="sidebar">
+        <br>
+        <ul class="menu">
+            <div class="navbar_logo">
+            </div>
+            <a href="">알바야</a>
+            <li>
+                <a href="#">SCHEDULE</a>
+            </li>
+            <li>
+                <a href="#">COMMUNITY</a>
+                <ul class="submenu">
+                    <li><a href="#">근무지 1</a></li>
+                    <li><a href="#">근무지 2</a></li>
+                    <li><a href="#">근무지 3</a></li>
+                    <ul class="subsubmenu">
+                        <li><a href="#">Main</a></li>
+                        <li><a href="#">Schedule</a></li>
+                        <li><a href="#">건의 사항</a></li>
+                        <li><a href="#">문의 사항</a></li>
+                    </ul>
                 </ul>
-            </ul>
-        </li>
-        <li>
-            <a href="#">MATE</a>
-            <ul class="matesubmenu">
-                <li><a href="#">강규빈</a></li>
-                <li><a href="#">윤다혜</a></li>
-                <li><a href="#">최윤정</a></li>
-            </ul>
-        </li>
-    </ul>
-    <ul class="navbar_icons">
-        <img src="{% static 'join/img/ic_instagram.png' %}" alt="">
-        <img src="{% static 'join/img/ic_twitter.png' %}" alt="">
-        <img src="{% static 'join/img/ic_facebook.png' %}" alt="">
-    </ul>
-<br>
+            </li>
+            <li>
+                <a href="#">MATE</a>
+                <ul class="matesubmenu">
+                    <li><a href="#">강규빈</a></li>
+                    <li><a href="#">윤다혜</a></li>
+                    <li><a href="#">최윤정</a></li>
+                </ul>
+            </li>
+        </ul>
+        <ul class="navbar_icons">
+            <img src="{% static 'join/img/ic_instagram.png' %}" alt="">
+            <img src="{% static 'join/img/ic_twitter.png' %}" alt="">
+            <img src="{% static 'join/img/ic_facebook.png' %}" alt="">
+        </ul>
+    </div>
+    
+    <br>
     {% block join %}
     {% endblock %}
 
