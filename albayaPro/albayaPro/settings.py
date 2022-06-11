@@ -135,9 +135,9 @@ STATICFILES_DIRS = [
 ]
 
 #필요따라 각각의 장고앱마다 앱별 정적 파일을 담는 별도의 static폴더
-STATICFILES_FINDERS = (
-    'djangobower.finders.BowerFinder',
-)
+# STATICFILES_FINDERS = (
+#     'djangobower.finders.BowerFinder',
+# )
 
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')

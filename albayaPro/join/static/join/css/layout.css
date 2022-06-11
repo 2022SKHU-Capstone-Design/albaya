@@ -128,8 +128,9 @@ input[id="menuicon"]+label span {
     background: #222;
     transition: all .35s;
 }
-#layout-sidebar{
-background: #F1F1F1;
+
+#layout-sidebar {
+    background: #F1F1F1;
 }
 
 input[id="menuicon"]+label span:nth-child(1) {
@@ -178,7 +179,7 @@ input[id="menuicon"]:checked+label+div {
     left: 0;
 }
 
-input[id="menuicon"] + label {
+input[id="menuicon"]+label {
     display: block;
     width: 60px;
     height: 50px;
@@ -188,15 +189,16 @@ input[id="menuicon"] + label {
     transition: all .35s;
     cursor: pointer;
 }
-input[id="menuicon"]:checked +label{
+
+input[id="menuicon"]:checked+label {
     z-index: 2;
     left: 300px;
 }
 
-.navbar_icons{
+.navbar_icons {
     margin-top: 700px;
 }
 
-.navbar_icons img{
+.navbar_icons img {
     width: 30px;
 }

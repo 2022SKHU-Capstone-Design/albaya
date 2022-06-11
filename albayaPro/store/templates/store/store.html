@@ -1,26 +1,55 @@
 {% extends 'join/layout.html' %}
 {% load static %}
-
 {% block store %}
 
-<!--날짜-->
-<div>
+<head>
+    <link rel="stylesheet" type="text/css" href="{% static 'store/css/store.css' %}">
+</head>
+
+<div class="albaya_store">
+    <!--display:grid 설정을 위한 div-->
+    <div></div>
+
+    <!--날짜-->
+    <!-- <div>
     <div class="calendar_nav">
         <button class="nav-btn go-prev">&lt;</button>
-        <button class="nav-btn go-today">2022.JUNE</button>
+        <button class="nav-btn go-today">{{ year }}.{{ month }}</button>
         <button class="nav-btn go-next">&gt;</button>
     </div>
-</div>
-<!--캘린더-->
-<div>
+</div> -->
+<!--실제로 콘텐츠가 들어와 있는 div-->
+    <!--캘린더-->
+    <div>
+        <div class="ym-wrapper">
+            <span class="year"></span>.<span class="month"></span>
+        </div>
+        <div class="calendar_main">
+            <div class="days">
+                <div class="day">SUN</div>
+                <div class="day">MON</div>
+                <div class="day">TUE</div>
+                <div class="day">WED</div>
+                <div class="day">THU</div>
+                <div class="day">FRI</div>
+                <div class="day">SAT</div>
+            </div>
+            <div class="dates"></div>
+        </div>
+        <!--공지사항-->
+        <div>
 
-</div>
-<!--공지사항-->
-<div>
+        </div>
+        <!--건의사항-->
+        <div>
 
-</div>
-<!--건의사항-->
-<div>
+        </div>
+    </div>
 
+    <!--display:grid 설정을 위한 div-->
+    <div></div>
+
+    <script src="{% static 'store/js/calender.js' %}"></script>
+    <script src="{% static 'store/js/reserve.js' %}"></script>
 </div>
 {% endblock %}

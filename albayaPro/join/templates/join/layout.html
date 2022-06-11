@@ -1,9 +1,20 @@
 {% load static %}
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <link rel="stylesheet" href="{% static 'join/signup.css' %}">
-    <link rel="stylesheet" href="{% static 'join/layout.css' %}">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!--css-->
+    <link rel="stylesheet" type="text/css" href="{% static 'join/css/layout.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'join/css/signup.css' %}">
+
+    <!--js-->
+
+    <!--title-->
+    <title>알바야?</title>
 </head>
 
 <body>
@@ -55,24 +66,19 @@
 
     <br>
     <!--join-->
-    <div>
-        {% block join %}
-        {% endblock %}
-    </div>
+    {% block join %}
+    {% endblock %}
 
     <!--store-->
-    <div>
-        {% block store %}
-        {% endblock %}
-    </div>
+    {% block store %}
+    {% endblock %}
 
     </header>
 
     <footer style="margin-left:25%;padding:1px 16px;height: 100px;">
         <p>
-            <span>저자 : leadme</span><br />
             <span>이메일 : albaya@gmail.com</span><br />
-            <span>&copy;Copyright 2020. cocoder. All Rights Reserved.</span>
+            <span>&copy;Copyright 2022. teamAlbaya. All Rights Reserved.</span>
         </p>
     </footer>
 
