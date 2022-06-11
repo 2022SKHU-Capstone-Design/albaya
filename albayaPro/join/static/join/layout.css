@@ -1,0 +1,202 @@
+@font-face {
+    font-family: 'GimpoGothicBold00';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2202-2@1.0/GimpoGothicBold00.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'GimpoGothicBold00';
+}
+
+/* 전체영역에서 여백을 없애줌 */
+
+* {
+
+    margin: 0;
+
+    padding: 0;
+
+}
+
+/* ul li태그에 리스트 스타일을 없앰 */
+
+ul li {
+    list-style: none;
+}
+
+/* a태그에 텍스트 밑줄을 없애고 색상을 #333 */
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+.menu {
+    width: 300px;
+    overflow: hidden;
+    margin: 0;
+    position: fixed;
+}
+
+.menu>li {
+    width: 100%;
+    text-align: center;
+    line-height: 40px;
+    background-color: #F1F1F1;
+}
+
+.menu a {
+    color: rgb(0, 0, 0);
+}
+
+.submenu>li {
+    line-height: 50px;
+    background-color: #94a9ff;
+}
+
+.submenu {
+    height: 0;
+    /*ul의 높이를 안보이게 처리*/
+    overflow: hidden;
+}
+
+.subsubmenu {
+    height: 0;
+    /*ul의 높이를 안보이게 처리*/
+    overflow: hidden;
+}
+
+.menu>li:hover .submenu .subsubmenu {
+    height: 300px;
+    /*서브메뉴 li한개의 높이 50*5*/
+    transition-duration: 1s;
+}
+
+.menu>li:hover {
+    background-color: #94a9ff;
+    transition-duration: 0.5s;
+}
+
+.menu>li:hover .submenu {
+    height: 300px;
+    /*서브메뉴 li한개의 높이 50*5*/
+    transition-duration: 1s;
+}
+
+.menu>li:hover .matesubmenu {
+    height: 120px;
+    /*서브메뉴 li한개의 높이 50*3*/
+    transition-duration: 1s;
+}
+
+.matesubmenu {
+    height: 0;
+    /*ul의 높이를 안보이게 처리*/
+    overflow: hidden;
+}
+
+.submenu .matesubsubmenu {
+    height: 0;
+    /*ul의 높이를 안보이게 처리*/
+    overflow: hidden;
+}
+
+.navbar_icons {
+    margin-bottom: 25%;
+    padding: 1px 16px;
+    height: 100px;
+}
+
+input[id="menuicon"] {
+    display: none;
+}
+
+input[id="menuicon"]+label {
+    display: block;
+    width: 60px;
+    height: 40px;
+    position: relative;
+    cursor: pointer;
+}
+
+input[id="menuicon"]+label span {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    border-radius: 30px;
+    background: #222;
+    transition: all .35s;
+}
+#layout-sidebar{
+background: #F1F1F1;
+}
+
+input[id="menuicon"]+label span:nth-child(1) {
+    top: 0;
+}
+
+input[id="menuicon"]+label span:nth-child(2) {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+input[id="menuicon"]+label span:nth-child(3) {
+    bottom: 0;
+}
+
+input[id="menuicon"]:checked+label {
+    z-index: 2;
+}
+
+input[id="menuicon"]:checked+label span:nth-child(1) {
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+}
+
+input[id="menuicon"]:checked+label span:nth-child(2) {
+    opacity: 0;
+}
+
+input[id="menuicon"]:checked+label span:nth-child(3) {
+    bottom: 50%;
+    transform: translateY(50%) rotate(-45deg);
+}
+
+div[class="sidebar"] {
+    width: 300px;
+    height: 100%;
+    background: #222;
+    position: fixed;
+    top: 0;
+    left: -300px;
+    z-index: 1;
+    transition: all .35s;
+}
+
+input[id="menuicon"]:checked+label+div {
+    left: 0;
+}
+
+input[id="menuicon"] + label {
+    display: block;
+    width: 60px;
+    height: 50px;
+    position: fixed;
+    left: 0;
+    top: calc(50% -35px);
+    transition: all .35s;
+    cursor: pointer;
+}
+input[id="menuicon"]:checked +label{
+    z-index: 2;
+    left: 300px;
+}
+
+.navbar_icons{
+    margin-top: 700px;
+}
+
+.navbar_icons img{
+    width: 30px;
+}

@@ -2,26 +2,80 @@
 <html>
 
 <head>
-
+    <link rel="stylesheet" href="{% static 'join/signup.css' %}">
+    <link rel="stylesheet" href="{% static 'join/layout.css' %}">
 </head>
 
 <body>
-    <nav>
 
-    </nav>
-    <header>
+    <input type="checkbox" id="menuicon">
+    <label for="menuicon">
+        <span></span>
+        <span></span>
+        <span></span>
+    </label>
+    <div id="layout-sidebar" class="sidebar">
+        <br>
+        <ul class="menu">
+            <div class="navbar_logo">
+            </div>
+            <a href="">알바야</a>
+            <li>
+                <a href="#">SCHEDULE</a>
+            </li>
+            <li>
+                <a href="#">COMMUNITY</a>
+                <ul class="submenu">
+                    <li><a href="#">근무지 1</a></li>
+                    <li><a href="#">근무지 2</a></li>
+                    <li><a href="#">근무지 3</a></li>
+                    <ul class="subsubmenu">
+                        <li><a href="#">Main</a></li>
+                        <li><a href="#">Schedule</a></li>
+                        <li><a href="#">건의 사항</a></li>
+                        <li><a href="#">문의 사항</a></li>
+                    </ul>
+                </ul>
+            </li>
+            <li>
+                <a href="#">MATE</a>
+                <ul class="matesubmenu">
+                    <li><a href="#">강규빈</a></li>
+                    <li><a href="#">윤다혜</a></li>
+                    <li><a href="#">최윤정</a></li>
+                </ul>
+            </li>
+        </ul>
+        <ul class="navbar_icons">
+            <img src="{% static 'join/img/ic_instagram.png' %}" alt="">
+            <img src="{% static 'join/img/ic_twitter.png' %}" alt="">
+            <img src="{% static 'join/img/ic_facebook.png' %}" alt="">
+        </ul>
+    </div>
 
-    </header>
-<!--join-->
+    <br>
+    <!--join-->
     <div>
         {% block join %}
         {% endblock %}
     </div>
-<!--store-->
+
+    <!--store-->
     <div>
         {% block store %}
         {% endblock %}
     </div>
+
+    </header>
+
+    <footer style="margin-left:25%;padding:1px 16px;height: 100px;">
+        <p>
+            <span>저자 : leadme</span><br />
+            <span>이메일 : albaya@gmail.com</span><br />
+            <span>&copy;Copyright 2020. cocoder. All Rights Reserved.</span>
+        </p>
+    </footer>
+
 </body>
 
 </html>
