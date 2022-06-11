@@ -8,6 +8,9 @@ def store(request) :
     notice = Notice.objects
     suggestion = SuggestionBox.objects
     return render(request, 'store/store.html', {'notice':notice})
- 
-def notice(request) :
-    notice = Notice.objects
+
+def notice(request) : 
+    return render(request, 'store/noticeboard.html')
+
+def suggest(request) : 
+    return render(request, 'store/suggestboard.html')
