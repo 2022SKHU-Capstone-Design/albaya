@@ -12,95 +12,53 @@ body {
 /* 전체영역에서 여백을 없애줌 */
 
 * {
-
     margin: 0;
-
     padding: 0;
-
 }
 
-/* ul li태그에 리스트 스타일을 없앰 */
-
-ul li {
-    list-style: none;
-}
-
-/* a태그에 텍스트 밑줄을 없애고 색상을 #333 */
-a {
-    text-decoration: none;
-    color: #333;
-}
-
-.menu {
-    width: 300px;
-    overflow: hidden;
-    margin: 0;
-    position: fixed;
-}
-
-.menu>li {
+  /* Style the sidenav links and the dropdown button */
+  .menu a, .dropdown-btn {
+    padding: 6px 8px 6px 16px;
+    text-decoration:  none;
+    font-size: 20px;
+    color: #222;
+    display: block;
+    border: none;
+    background: none;
     width: 100%;
-    text-align: center;
-    line-height: 40px;
-    background-color: #F1F1F1;
-}
-
-.menu a {
-    color: rgb(0, 0, 0);
-}
-
-.submenu>li {
-    line-height: 50px;
-    background-color: #94a9ff;
-}
-
-.submenu {
-    height: 0;
-    /*ul의 높이를 안보이게 처리*/
-    overflow: hidden;
-}
-
-.subsubmenu {
-    height: 0;
-    /*ul의 높이를 안보이게 처리*/
-    overflow: hidden;
-}
-
-.menu>li:hover .submenu .subsubmenu {
-    height: 300px;
-    /*서브메뉴 li한개의 높이 50*5*/
-    transition-duration: 1s;
-}
-
-.menu>li:hover {
-    background-color: #94a9ff;
-    transition-duration: 0.5s;
-}
-
-.menu>li:hover .submenu {
-    height: 300px;
-    /*서브메뉴 li한개의 높이 50*5*/
-    transition-duration: 1s;
-}
-
-.menu>li:hover .matesubmenu {
-    height: 120px;
-    /*서브메뉴 li한개의 높이 50*3*/
-    transition-duration: 1s;
-}
-
-.matesubmenu {
-    height: 0;
-    /*ul의 높이를 안보이게 처리*/
-    overflow: hidden;
-}
-
-.submenu .matesubsubmenu {
-    height: 0;
-    /*ul의 높이를 안보이게 처리*/
-    overflow: hidden;
-}
-
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  
+  /* Main content */
+  .main {
+    /*margin-left: 200px;*/ /* Same as the width of the sidenav */
+    font-size: 20px; /* Increased text to enable scrolling */
+    padding: 0px 10px;
+  }
+  
+  /* Add an active class to the active dropdown button */
+  .active {
+    background-color: green;
+    color: black;
+  }
+  
+  /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+  .submenu {
+    display: none;
+    background-color: #262626;
+    padding-left: 8px;
+  }
+  
+  /* Some media queries for responsiveness */
+  @media screen and (max-height: 450px) {
+    .submenu {padding-top: 15px;}
+    .submenu {font-size: 18px;}
+  }
+  
+/* 이 전까지 */
 .navbar_icons {
     margin-bottom: 25%;
     padding: 1px 16px;
@@ -201,4 +159,66 @@ input[id="menuicon"]:checked+label {
 
 .navbar_icons img {
     width: 30px;
+}
+
+/* Fixed sidenav, full height */
+.sidenav {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+/* Style the sidenav links and the dropdown button */
+.sidenav a, .dropdown-btn {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+  border: none;
+  background: none;
+  width:100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+
+/* On mouse-over */
+.sidenav a:hover, .dropdown-btn:hover {
+  color: #222;
+}
+
+
+/* Add an active class to the active dropdown button */
+.active {
+  background-color: green;
+  color: white;
+}
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdown-container {
+  display: none;
+  
+  padding-left: 8px;
+}
+
+/* Optional: Style the caret down icon */
+.fa-caret-down {
+  float: right;
+  padding-right: 8px;
+}
+
+/* footer */
+
+footer{
+    text-align: right;
+    font-size: 5px;
+    
+    margin: 20px 20px;
 }
