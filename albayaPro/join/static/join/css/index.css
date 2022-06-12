@@ -1,0 +1,22 @@
+@font-face {
+    font-family: 'GimpoGothicBold00';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2202-2@1.0/GimpoGothicBold00.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'GimpoGothicBold00';
+
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+    width: 100%;
+    height: 750px;
+
+    margin: auto auto;
+}
+
+.main-title img{
+    width: 500px;
+}

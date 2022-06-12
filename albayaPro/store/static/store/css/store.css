@@ -27,6 +27,13 @@
     width: calc(1400px / 7);
     text-align: center;
     transition: all .3s;
+
+    padding: 10px 0;
+}
+
+.day hr{
+    border: 1px solid #333333;
+    margin: 0 2px;
 }
 
 .dates {
@@ -38,10 +45,11 @@
 
 .date {
     cursor: pointer;
-    padding: 10% 5%;
-    text-align: center;
+    text-align: left;
     border: 1px solid #333333;
     transition: all .3s;
+    
+    padding: 0 5% 40%;
 }
 
 .day:nth-child(7n + 1),
@@ -56,4 +64,71 @@
 
 /* 캘린더 구현 css 끝 */
 
+/*공지사항 / 건의사항 목록 grid 설정*/
+.not-sug-list{
+    display: grid;
+    grid-template-columns: 45% 10% 45%;
+    grid-template-rows: auto;
+
+    margin: 30px auto;
+}
+
 /* 공지사항 */
+.notice header{
+    padding: 20px;
+}
+
+.notice header div{
+    display: grid;
+    grid-template-columns: 90% 10%;
+}
+
+.notice header h1{
+    margin: auto 20px;
+}
+
+.notice header div a{
+    margin: auto 0;
+    text-align: right;
+}
+
+.notice_list a{
+    display: block;
+
+    padding: 10px 80px;
+}
+
+/* 가운데 구분선 */
+.store_hr, .vertical_hr{
+    width: 0.1px;
+    margin: 0 auto;
+}
+
+.store_hr hr{
+    height: 100%;
+}
+
+/* 건의사항 */
+.suggest header{
+    padding: 20px;
+}
+
+.suggest header div{
+    display: grid;
+    grid-template-columns: 90% 10%;
+}
+
+.suggest header h1{
+    margin: auto 20px;
+}
+
+.suggest header div a{
+    margin: auto 0;
+    text-align: right;
+}
+
+.suggest_list a{
+    display: block;
+
+    padding: 10px 80px;
+}

@@ -1,6 +1,6 @@
 from urllib import request
 from django.shortcuts import render, redirect, get_object_or_404
-
+from django.core.paginator import Paginator
 from datetime import datetime
 from django.utils import dateformat, timezone
 
@@ -12,10 +12,17 @@ def store(request) :
     notices = Notice.objects
     suggestions = Suggestion.objects
 
-    #오늘 날짜가져오기
-    year = dateformat(datetime.now()).format('Y')
-    month = dateformat(datetime.now()).format('M')
-    return render(request, 'store/store.html', {'notices':notices, 'suggestions':suggestions, 'year':year, 'month':month})
+    #페이징
+    notice_page = request.GET.get('notice_page', 1)
+    notice_list = Notice.objects.order_by('-pub_date') #생성날짜를 기준으로 역순으로 정렬
+    notice_paignator = Paginator(notice_list, 3)
+    notice_page_obj = notice_paignator.get_page(notice_page)
+
+    suggest_page = request.GET.get('suggest_page', 1)
+    suggest_list = Suggestion.objects.order_by('-pub_date')
+    suggest_paignator = Paginator(suggest_list, 3)
+    suggest_page_obj = suggest_paignator.get_page(suggest_page)
+    return render(request, 'store/store.html', {'notices':notices, 'suggestions':suggestions, 'notice_list':notice_page_obj, 'suggest_list':suggest_page_obj})
 
 #Read
 #공지사항 페이지

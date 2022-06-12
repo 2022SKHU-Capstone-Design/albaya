@@ -18,7 +18,8 @@
         <button class="nav-btn go-next">&gt;</button>
     </div>
 </div> -->
-<!--실제로 콘텐츠가 들어와 있는 div-->
+
+    <!--실제로 콘텐츠가 들어와 있는 div-->
     <!--캘린더-->
     <div>
         <div class="ym-wrapper">
@@ -26,40 +27,83 @@
         </div>
         <div class="calendar_main">
             <div class="days">
-                <div class="day">SUN</div>
-                <div class="day">MON</div>
-                <div class="day">TUE</div>
-                <div class="day">WED</div>
-                <div class="day">THU</div>
-                <div class="day">FRI</div>
-                <div class="day">SAT</div>
+                <div class="day">
+                    SUN
+                    <hr>
+                </div>
+                <div class="day">
+                    MON
+                    <hr> 
+                </div>
+                <div class="day">
+                    TUE
+                    <hr>
+                </div>
+                <div class="day">
+                    WED
+                    <hr>
+                </div>
+                <div class="day">
+                    THU
+                    <hr>
+                </div>
+                <div class="day">
+                    FRI
+                    <hr>
+                </div>
+                <div class="day">
+                    SAT
+                    <hr>
+                </div>
             </div>
             <div class="dates"></div>
         </div>
-        <!--공지사항-->
-        <div class="notice">
-            <header>
-                <div class="noti-board-title">
-                    <h1>공지사항</h1>
+
+        <!-- 공지+건의 -->
+        <div class="not-sug-list">
+            <!--공지사항-->
+            <div class="notice">
+                <header>
+                    <div>
+                        <div class="noti-board-title">
+                            <h1>공지사항</h1>
+                        </div>
+                        <div class="noti-board-title">
+                            <a href="{% url 'notice' %}">+</a>
+                        </div>
+                    </div>
+                </header>
+                <div class="notice_list">
+                    {% for notices in notices.all %}
+                    <a href="{% url 'notice_detail' notices.id %}">{{ notices.title }}</a>
+                    {% endfor %}
+                    <a href="{% url 'notice' %}">더보기</a>
                 </div>
-                <div class="noti-board-title">
-                    <a href="{% url 'notice' %}">+</a>
+            </div>
+
+            <!-- 구분선 -->
+            <div class="store_hr vertical_hr">
+                <hr>
+            </div>
+
+            <!--건의사항-->
+            <div class="suggest">
+                <header>
+                    <div>
+                        <div class="sug-board-title">
+                            <h1>건의사항</h1>
+                        </div>
+                        <div>
+                            <a href="{% url 'suggest' %}">+</a>
+                        </div>
+                    </div>
+                </header>
+                <div class="suggest_list">
+                    {% for suggestions in suggestions.all %}
+                    <a href="{% url 'suggest_detail' notices.id %}">{{ suggestions.title }}</a>
+                    {% endfor %}
+                    <a href="{% url 'suggest' %}">더보기</a>
                 </div>
-            </header>
-            <div>
-                
-            </div>
-        </div>
-        <div class="store_hr vertical_hr">
-            <hr>
-        </div>
-        <!--건의사항-->
-        <div>
-            <div class="sug-board-title">
-                <h1>건의사항</h1>
-            </div>
-            <div class="sug-board-title">
-                <a href="{% url 'suggest' %}">+</a>
             </div>
         </div>
     </div>
