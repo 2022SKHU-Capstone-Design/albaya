@@ -1,0 +1,18 @@
+{% extends 'join/layout.html' %}
+{% load static %}
+
+{% block suggest_detail %}
+
+<head>
+    <link rel="stylesheet" type="text/css" href="{% static 'store/css/veiw_suggest.css' %}">
+</head>
+<div class="sug-detail">
+    <h1>{{suggest.title}}</h1>
+    <p>작성 일자 및 시간 : {{suggest.pub_date}}</p>
+    <p>작성자 : {{ suggest.writer }}</p>
+    <p>내용 : {{suggest.body}}</p>
+    <a href="#">수정하기</a>
+    <a href="#">삭제하기</a>
+    <a href="{% url 'suggest' %}">돌아가기</a>
+</div>
+{% endblock %}

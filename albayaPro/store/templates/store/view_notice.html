@@ -1,0 +1,9 @@
+{% extends 'join/layout.html' %}
+{% load static %}
+
+<p>제목 : {{notice.title}}</p>
+<p>작성 일자 및 시간 : {{notice.pub_date}}</p>
+<p>내용 : {{notice.body}}</p>
+<a href="#">수정하기</a>
+<a href="#">삭제하기</a>
+<a href="{% url 'notice' %}">돌아가기</a>

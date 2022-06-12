@@ -1,1 +1,22 @@
-<h1>여긴 건의게시판 디테일</h1>
+{% extends 'join/layout.html' %}
+{% load static %}
+{% block suggest %}
+
+<head>
+    <link rel="stylesheet" type="text/css" href="{% static 'store/css/noticeboard.css' %}">
+</head>
+<div class="noti-board">
+    <header>
+        <p>건의사항</p>
+        <a href="{% url 'store' %}"> > </a>
+    </header>
+    <div class="noti-con">
+        {% for suggestions in suggestions.all %}
+        <div>
+            <a href="{% url 'suggest_detail' suggestions.id %}">{{ suggestions.title }}</a>
+            <hr>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

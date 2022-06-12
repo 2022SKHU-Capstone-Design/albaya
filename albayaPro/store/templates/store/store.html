@@ -75,7 +75,7 @@
                 </header>
                 <div class="notice_list">
                     {% for notices in notices.all %}
-                    <a href="{% url 'notice_detail' notices.id %}">{{ notices.title }}</a>
+                    <u><a href="{% url 'notice_detail' notices.id %}">{{ notices.title }}</a></u>
                     {% endfor %}
                     <a href="{% url 'notice' %}">더보기</a>
                 </div>
@@ -100,7 +100,7 @@
                 </header>
                 <div class="suggest_list">
                     {% for suggestions in suggestions.all %}
-                    <a href="{% url 'suggest_detail' notices.id %}">{{ suggestions.title }}</a>
+                    <u><a href="{% url 'suggest_detail' suggestions.id %}">{{ suggestions.title }}</a></u>
                     {% endfor %}
                     <a href="{% url 'suggest' %}">더보기</a>
                 </div>

@@ -85,15 +85,18 @@
 
 .notice header h1{
     margin: auto 20px;
+    color: #333333;
 }
 
 .notice header div a{
     margin: auto 0;
     text-align: right;
+    color: #333333;
 }
 
 .notice_list a{
     display: block;
+    color: #333333;
 
     padding: 10px 80px;
 }
@@ -110,6 +113,8 @@
 
 /* 건의사항 */
 .suggest header{
+    color: #333333;
+
     padding: 20px;
 }
 
@@ -120,15 +125,18 @@
 
 .suggest header h1{
     margin: auto 20px;
+    color: #333333;
 }
 
 .suggest header div a{
     margin: auto 0;
     text-align: right;
+    color: #333333;
 }
 
 .suggest_list a{
     display: block;
+    color: #333333;
 
     padding: 10px 80px;
 }

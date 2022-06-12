@@ -1,1 +1,23 @@
-<h1>여긴 공지게시판 디테일</h1>
+{% extends 'join/layout.html' %}
+{% load static %}
+{% block notice %}
+
+<head>
+    <link rel="stylesheet" type="text/css" href="{% static 'store/css/noticeboard.css' %}">
+</head>
+
+<div class="noti-board">
+    <header>
+        <p>공지사항</p>
+        <a href="{% url 'store' %}"> > </a>
+    </header>
+    <div class="noti-con">
+        {% for notices in notices.all %}
+        <div>
+            <a href="{% url 'notice_detail' notices.id %}">{{ notices.title }}</a>
+            <hr>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

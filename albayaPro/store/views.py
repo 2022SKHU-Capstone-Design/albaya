@@ -27,16 +27,18 @@ def store(request) :
 #Read
 #공지사항 페이지
 def notice(request) : 
-    return render(request, 'store/noticeboard.html')
+    notices = Notice.objects
+    return render(request, 'store/noticeboard.html', {'notices' : notices})
 
 #공지글 내용보기
-def view_notice(reqeust):
+def view_notice(reqeust, id):
     notice = get_object_or_404(Notice, id = id)
-    return render(request, 'store/view_notice.html')
+    return render(request, 'store/view_notice.html', {'notice':notice})
 
 #건의사항 페이지
 def suggest(request) : 
-    return render(request, 'store/suggestboard.html')
+    suggestions = Suggestion.objects
+    return render(request, 'store/suggestboard.html', {'suggestions':suggestions})
 
 #건의글 내용보기
 def view_suggest(request, id):

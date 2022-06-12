@@ -1,0 +1,39 @@
+/* suggest board랑 이어져 있음 */
+
+.noti-board{
+    width: 1400px;
+    height: 600px;
+
+    margin: auto;
+    padding: 10px;
+}
+
+.noti-board header{
+    display: flex;
+    font-size: 40px;
+
+    margin-bottom: 40px;
+}
+
+.noti-board header a{
+    font-size: 30px;
+
+    margin: auto 10px;
+}
+
+.noti-board div{
+    margin: auto 40px;
+}
+
+.noti-board .noti-con div{
+    margin: 10px auto;
+}
+
+.noti-con a{
+    font-size: 20px;
+    color: #333333;
+}
+
+.noti-con hr{
+    width: 95%;
+}

@@ -29,18 +29,21 @@
             <ul class="menu">
                 <div class="navbar_logo">
                 </div>
-                <a href="#home">알바야</a>
+                <a href="{% url 'myCalendar' %}">
+                    <img src="{% static 'join/img/albaya-logo.png' %}" width="45px" style="display : inline-block; margin: auto;">
+                    알바야
+                </a>
                 <br>
 
-                <a href="#about">SCHEDULE</a>
+                <a href="{% url 'myCalendar' %}">SCHEDULE</a>
                 <hr>
                 <button class="dropdown-btn">COMMUNITY
                     <i class="fa fa-caret-down"></i>
                 </button>
                 <div class="dropdown-container">
-                    <a href="#">근무지 1</a>
-                    <a href="#">근무지 2</a>
-                    <a href="#">근무지 3</a>
+                    <a href="{% url 'store' %}">근무지 1</a>
+                    <a href="{% url 'store' %}">근무지 2</a>
+                    <a href="{% url 'store' %}">근무지 3</a>
                 </div>
                 <hr>
                 <button class="dropdown-btn">MATE
@@ -70,6 +73,18 @@
 
         <!--store-->
         {% block store %}
+        {% endblock %}
+
+        <!-- notice board -->
+        {% block notice %}
+        {% endblock %}
+
+        <!-- suggest board -->
+        {% block suggest %}
+        {% endblock %}
+
+        <!-- suggest_detail -->
+        {% block suggest_detail %}
         {% endblock %}
 
         <!-- calendar -->
