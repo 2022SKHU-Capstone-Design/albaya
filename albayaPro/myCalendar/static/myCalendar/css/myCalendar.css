@@ -1,0 +1,105 @@
+.albaya_calendar{
+    display: grid;
+    grid-template-columns: 50px auto 50px;
+}
+
+.ym-wrapper{
+    width: 1400px;
+    text-align : right;
+}
+
+.ym-wrapper span{
+    font-size: 30px;
+}
+
+
+/* 캘린더 구현 */
+
+.calendar_main{
+    border-collapse: collapse;
+}
+
+.days {
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px 200px 200px 200px;
+}
+
+.day {
+    width: calc(1400px / 7);
+    text-align: center;
+    transition: all .3s;
+
+    padding: 10px 0;
+}
+
+.day hr{
+    border: 1px solid #333333;
+    margin: 0 2px;
+}
+
+.dates {
+    width: 1400px;
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px 200px 200px 200px;
+    border: 1px solid #333333;
+}
+
+.date {
+    cursor: pointer;
+    text-align: left;
+    border: 1px solid #333333;
+    transition: all .3s;
+    
+    padding: 0 5% 40%;
+}
+
+.day:nth-child(7n + 1),
+.date:nth-child(7n + 1) {
+    color: #D13E3E;
+}
+
+.day:nth-child(7n),
+.date:nth-child(7n) {
+    color: #396EE2;
+}
+
+/* 캘린더 구현 css 끝 */
+
+/* 시급확인 */
+.pay-check{
+    display: grid;
+    grid-template-columns: calc(1400px/3) calc(1400px/3) calc(1400px/3);
+}
+
+.pay-check div{
+    border-radius: 5px;
+
+    width: 415px;
+
+    margin-top: 10px;
+    padding: 20px 20px;
+}
+
+.pay-check .pay1{
+    background-color: #EDD9BC;
+    margin-right : 10px;
+}
+
+.pay-check .pay2{
+    background-color: #BDD5EB;
+}
+
+.pay-check .pay3{
+    background-color: #F2D9D9;
+    margin-left : 14px;
+}
+
+.pay-check h1{
+    font-size: 20px;
+
+    margin: 0 auto 10px;
+}
+
+.pay-check p{
+    font-size: 15px;
+}

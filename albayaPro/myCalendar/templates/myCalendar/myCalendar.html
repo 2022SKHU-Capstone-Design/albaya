@@ -1,1 +1,80 @@
-<h1> 회원가입도 로그인도 화긴^^</h1>
+{% extends 'join/layout.html' %}
+{% load static %}
+{% block calendar %}
+
+<head>
+    <link rel="stylesheet" type="text/css" href="{% static 'myCalendar/css/myCalendar.css' %}">
+</head>
+
+<div class="albaya_calendar">
+    <!--display:grid 설정을 위한 div-->
+    <div></div>
+    <!--실제로 콘텐츠가 들어와 있는 div-->
+    <!--캘린더-->
+    <div>
+        <div class="ym-wrapper">
+            <span class="year"></span>.<span class="month"></span>
+        </div>
+        <div class="calendar_main">
+            <div class="days">
+                <div class="day">
+                    SUN
+                    <hr>
+                </div>
+                <div class="day">
+                    MON
+                    <hr>
+                </div>
+                <div class="day">
+                    TUE
+                    <hr>
+                </div>
+                <div class="day">
+                    WED
+                    <hr>
+                </div>
+                <div class="day">
+                    THU
+                    <hr>
+                </div>
+                <div class="day">
+                    FRI
+                    <hr>
+                </div>
+                <div class="day">
+                    SAT
+                    <hr>
+                </div>
+            </div>
+            <div class="dates"></div>
+        </div>
+
+        <div class="pay-check">
+            <div class="pay1">
+                <h1>올리브영</h1>
+                <p>시급 : </p>
+                <p>총 근무시간 : </p>
+                <p>총 급여 : </p>
+            </div>
+            <div class="pay2">
+                <h1>CU</h1>
+                <p>시급 : </p>
+                <p>총 근무시간 : </p>
+                <p>총 급여 : </p>
+            </div>
+            <div class="pay3">
+                <h1>GS25</h1>
+                <p>시급 : </p>
+                <p>총 근무시간 : </p>
+                <p>총 급여 : </p>
+            </div>
+        </div>
+    </div>
+
+    <!--display:grid 설정을 위한 div-->
+    <div></div>
+
+    <!-- script -->
+    <script src="{% static 'myCalendar/js/calender.js' %}"></script>
+
+    {% endblock %}
