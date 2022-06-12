@@ -13,9 +13,9 @@ def store(request) :
     suggestions = Suggestion.objects
 
     #오늘 날짜가져오기
-    year = DateFormat(datetime.now()).format('Y')
-    month = DateFormat(datetime.now()).format('M')
-    return render(request, 'store/store.html', {'notice':notice, 'suggest':suggest, 'year':year, 'month':month})
+    year = dateformat(datetime.now()).format('Y')
+    month = dateformat(datetime.now()).format('M')
+    return render(request, 'store/store.html', {'notices':notices, 'suggestions':suggestions, 'year':year, 'month':month})
 
 #Read
 #공지사항 페이지
