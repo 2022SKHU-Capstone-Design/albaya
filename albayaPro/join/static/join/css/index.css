@@ -9,14 +9,64 @@ body {
     font-family: 'GimpoGothicBold00';
 
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 55% 5% 40%;
 
-    width: 100%;
-    height: 750px;
+    width: 1400px;
+    height: 700px;
 
+    margin: auto auto;
+}
+
+/* 알바야 로고 및 설명 */
+.main-title{
     margin: auto auto;
 }
 
 .main-title img{
     width: 500px;
+}
+
+.main-title p{
+    padding: 5px 50px;
+}
+
+/* 가운데 선 */
+.index-hr hr{
+    width: 0.1px;
+    height: 70%;
+
+    margin: 100px auto;
+}
+
+/* 로그인 Form */
+.login{
+    margin: auto 50px;
+}
+
+.login-title .title{
+    font-size: 20px;
+    margin: auto auto 30px;
+}
+
+.login span{
+    font-size: 10px;
+}
+
+.login input{
+    width: 300px;
+    height: 30px;
+    text-align: center;
+}
+
+.login button{
+    width: 308px;
+    height: 30px;
+
+    margin: 20px auto;
+}
+
+.login .signup-but{
+    display: block;
+    width: 308px;
+    text-align: right;
 }

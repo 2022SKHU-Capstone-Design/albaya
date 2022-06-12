@@ -19,17 +19,36 @@
 <body>
     <div class="main-title">
         <img src="{% static 'join/img/albaya-logo.png' %}">
-        <p>알바야 설명</p>
+        <p>
+            알바야는 아르바이트생과 점주를 위한 스케줄러 서비스로
+            <br>
+            개인의 스케줄과 알바 지점의 스케줄을 등록하고 공유하는 서비스 입니다.
+            <br>
+            알바야를 통해 지금까지 복잡했던 아르바이트 스케줄을 한번에 관리해보세요.
+        </p>
     </div>
 
-    <div>
-        <form method="POST" action="/signin">
-            {% csrf_token %}
-            {{ signin_form.as_p}}
-            <input type="submit" value="submit">
-        </form>
+    <div class="index-hr">
+        <hr>
+    </div>
 
-        <a href="{% url 'signup' %}">회원가입</a>
+    <div class="login">
+        <form method="POST" action="{% url 'signin' %}" id="signinForm">
+            {% csrf_token %}
+            <div class="login-title">
+                <div class="title">로그인</div>
+                <div class="login-username">
+                    <span>USERNAME</span>
+                </div>
+                <input type="text" class="username input" name="username" placeholder="Enter username" />
+                <div class="login-password">
+                    <span>PASSWORD</span>
+                </div>
+                <input type="password" class="password input" placeholder="Enter password" name="password" />
+            </div>
+            <button class="login-button" type="submit">로그인</button>
+        </form>
+        <a class="signup-but" href="{% url 'signup' %}">회원가입</a>
     </div>
 
 </body>
