@@ -4,17 +4,17 @@ from .models import *
 class NoticeForm(forms.ModelForm) : 
     class Meta:
         model = Notice
-        fields = ['title', 'body']
+        fields = ['title', 'pub_date', 'body']
 
 class NoticeCommnetForm(forms.ModelForm) :
     class Meta:
         model = NoticeCommnet
         fields = ['comment']
 
-class SuggestionBoxForm(forms.ModelForm) :
+class SuggestionForm(forms.ModelForm) :
     class Meta:
-        model = SuggestionBox
-        fields = ['title', 'body']
+        model = Suggestion
+        fields = ['title', 'pub_date', 'writer', 'body']
 
 class SuggestionCommnetForm(forms.ModelForm) :
     class Meta:
