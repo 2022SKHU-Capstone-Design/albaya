@@ -74,7 +74,7 @@
 <img alt="FlowChart" src="https://user-images.githubusercontent.com/49307827/167326877-c954b1d5-eceb-4d98-9298-2cf4ebc37f4f.png">
 <br>
 
-**DATABASE**
+**✏️DATABASE**
 - 수정 중
 
 **✏️DEVELOP TIMELINE**
