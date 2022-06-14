@@ -28,12 +28,24 @@
 <img alt="FlowChart" src="https://user-images.githubusercontent.com/49307827/167326993-5ecf3a30-f73c-4a89-8ae0-bf8f8e4a170a.png">
 <br>
 
+**✏️주요 서비스**
+- 알바 일정 스케줄러
+    - 아르바이트생을 위한 개인 일정 스케줄러
+- 알바 시급 계산기
+    - 급여 명세서 형식의 시급 계산기
+- 알바 지점별 커뮤니티
+    - 점주와 아르바이트생 간의 원할한 소통을 위한 커뮤니티
+        - 지점 일정 스케줄러
+        - 지점 내 아르바이트생 근무 스케줄러
+        - 지점 내 공지사항 : 점주의 업무지시
+        - 아르바이트생의 건의사항 : 아르바이트생 간의 업무 
+
 **✏️개발 분야**
 - Web
 <br>
 
 **✏️주요 기술**
-- (Develop)Django Calender : https://djangopackages.org/grids/g/calendar/
+- (Develop)Django Calender : (https://github.com/llazzaro/django-scheduler)
 - (Develop)CRUD + Commnet + Hashtag + Like
 - (Deploy)Heroku Server
 <br>
@@ -45,13 +57,15 @@
 
 **✏️대표 컬러**
 참고 사이트 : [https://colorhunt.co/](https://colorhunt.co/)
-- 수정 중
+- #EDD9BC
+- #D3E4CD
+- #F2D9D9
+- #BDD5EB
 
 <br>
 
 **✏️로고**
-- 수정 중
-
+<img alt="logo-fial" src="https://user-images.githubusercontent.com/49307827/173521757-1a3e37b4-2e86-4407-afc7-9ac5bb086586.png">
 <br>
 
 # Develop
@@ -61,7 +75,15 @@
 <br>
 
 **DATABASE**
-- 논의 중
+- 수정 중
+
+**✏️DEVELOP TIMELINE**
+- 3월 ~ 4월 2주차 : 아이디어 브레인 스토밍 | 서비스 기획 | 프로젝트 빌드업
+- 4월 3주차 ~ 5월 2주차 : UI/UX 기획 | UI/UX XD작업 | WIRE FRAME 제작 | DJANGO SCHEDULER PACKAGE 공부
+- 5월 3주차 ~ 6월 2주차 : 개발
+- 종강
+- 6월 3주차 ~ 7월 : 개발
+- 8월 : DEPLOY | 서비스 내 오류 수정
 <br>
 
 # Developer
