@@ -90,7 +90,7 @@
 
 **😋윤다혜**
 
-> Position : 팀장 | Back | Deploy
+> Position : 팀장 | Back | Front | Deploy
 > 
 > Git : [https://github.com/Rahdduru](https://github.com/Rahdduru)
 > 
